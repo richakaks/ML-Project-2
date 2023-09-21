@@ -262,9 +262,9 @@ with open('car_price_prediction.model', 'rb') as model_file:
 
 model2 = pickle.load(open('car-a2-prediction.pkl', 'rb'))
 
-X_train = pd.read_csv("X_train.csv")
-scaler = StandardScaler()
-X_train = scaler.fit_transform(X_train)
+X_train = pd.read_csv("X_train_1.csv")
+scaler1 = StandardScaler()
+X_train = scaler1.fit_transform(X_train)
 
 scaler2 = pickle.load(open('a2r-scalar.model', 'rb'))
 
